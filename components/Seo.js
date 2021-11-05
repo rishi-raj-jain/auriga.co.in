@@ -4,7 +4,7 @@ import { defaultDescription, defaultTitle, deploymentUrl } from '@/lib/data'
 const SEO = ({
   title,
   description,
-  image = `${deploymentUrl}/static/social-media-card.jpg`,
+  image = 'https://auriga-gold.vercel.app/Mobile.jpg',
   pubDate,
   canonical,
   author,

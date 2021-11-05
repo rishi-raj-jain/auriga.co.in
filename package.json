@@ -1,0 +1,31 @@
+{
+  "name": "auriga",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "format": "prettier '**/*' --ignore-unknown --write"
+  },
+  "dependencies": {
+    "next": "^12.0.2",
+    "preact": "10.5.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sharp": "^0.29.2"
+  },
+  "prettier": {
+    "semi": false,
+    "tabWidth": 2,
+    "printWidth": 100,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.10",
+    "prettier": "^2.3.0",
+    "tailwindcss": "^2.1.1"
+  }
+}

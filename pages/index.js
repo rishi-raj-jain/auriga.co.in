@@ -72,7 +72,3 @@ const Home = () => {
 }
 
 export default Home
-
-export const config= {
-  unstable_runtimeJS: false
-}

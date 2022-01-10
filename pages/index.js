@@ -62,7 +62,6 @@ const Home = () => {
                 objectFit="cover"
                 placeholder="blur"
                 src={item.image}
-                blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(1400, 720))}`}
               />
             </div>
           </a>

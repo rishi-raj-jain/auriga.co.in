@@ -1,6 +1,5 @@
 import NextImage from 'next/image'
 import { shimmer, toBase64 } from '@/lib/shimmer'
-import useWindowSize from '@/components/WindowSize'
 
 const tabs = [
   {
@@ -37,7 +36,6 @@ const tabs = [
 ]
 
 const Home = () => {
-  const size = useWindowSize()
   return (
     <div className="mt-[42px] h-[calc(100vh-42px)] w-screen flex flex-col">
       <div className="h-full flex flex-col md:flex-row">
@@ -56,16 +54,14 @@ const Home = () => {
             </h1>
             <h3 className="mt-3 px-8 z-20 font-light text-white">{item.content}</h3>
             <div
-              className={`bg-gradient-to-br ${
-                size.width > 768 ? item.gradient : item.gradientMobile
-              } z-10 absolute h-full w-full`}
+              className={`bg-gradient-to-br ${item.gradient} z-10 absolute h-full w-full`}
             ></div>
             <div className="z-0 absolute h-full w-full">
               <NextImage
                 layout="fill"
                 objectFit="cover"
                 placeholder="blur"
-                src={size.width > 768 ? item.image : item.mobile}
+                src={item.image}
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(1400, 720))}`}
               />
             </div>
